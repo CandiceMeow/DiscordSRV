@@ -49,10 +49,10 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.4.201901251254</version>
+                <version>0.5.5.201112152213</version>
                 <configuration>
-                    <output>file</output>
-                    <append>true</append>
+                    <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+                    <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
                 </configuration>
                 <executions>
                     <execution>
@@ -63,7 +63,7 @@
                     </execution>
                     <execution>
                         <id>jacoco-site</id>
-                        <phase>verify</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
