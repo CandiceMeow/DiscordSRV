@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.bukkit.plugin.Plugin;
 import static org.mockito.Mockito.*;
 
-public class testCreateGraph() {
+public class testCreateGraph {
     private Plugin mockedPlugin = mock(Plugin.class);
 
     @Test
