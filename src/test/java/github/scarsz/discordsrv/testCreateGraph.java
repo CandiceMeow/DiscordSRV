@@ -16,7 +16,7 @@ public class testCreateGraph() {
             String result = testClass.createGraph("newGraphName");
             Assert.assertEquals(result, "newGraphName");
         } catch (IllegalArgumentException e) {
-            System.out.println("Graph name is null")
+            System.out.println("Graph name is null");
         }
     }
 }
