@@ -15,8 +15,8 @@ public class testCreateGraph {
             MCStats testClass = new MCStats(mockedPlugin);
             String result = testClass.createGraph("newGraphName").getName();
             Assert.assertEquals(result, "newGraphName");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Graph name is null");
+        } catch (Exception e) {
+            System.out.println("Invalid input");
         }
     }
 }
