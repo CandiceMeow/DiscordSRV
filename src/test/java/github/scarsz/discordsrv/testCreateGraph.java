@@ -13,7 +13,7 @@ public class testCreateGraph {
     public void test() {
         try {
             MCStats testClass = new MCStats(mockedPlugin);
-            String result = testClass.createGraph("newGraphName");
+            String result = testClass.createGraph("newGraphName").getName();
             Assert.assertEquals(result, "newGraphName");
         } catch (IllegalArgumentException e) {
             System.out.println("Graph name is null");
